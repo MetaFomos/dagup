@@ -1005,7 +1005,7 @@ double xdagGetHashRate(void)
 int read_command(char *cmd)
 {
 #if !defined(_WIN32) && !defined(_WIN64)
-	char* line = linenoise("xdag> ");
+	char* line = linenoise("dag> ");
 	if(line == NULL) return 0;
 
 	if(strlen(line) > XDAG_COMMAND_MAX) {
